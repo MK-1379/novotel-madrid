@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novotel Madrid Center</title>
+  <link rel="icon" href="img/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-azul py-3 sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo-novotel-blanco.png" alt="Novotel Madrid Center" height="30">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a id="header-nav-link" class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a id="header-nav-link" class="nav-link" href="rooms.html">Habitaciones</a></li>
+          <li class="nav-item"><a id="header-nav-link" class="nav-link" href="#ofertas">Ofertas</a></li>
+          <li class="nav-item"><a id="header-nav-link" class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a id="header-nav-link" class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+        <a id="reservar" href="#buscador" class="btn btn-dorado">Reservar</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="card border-0 rounded-0 text-white">
+    <img src="img/hero.jpg" class="card-img rounded-0 foto-hero" alt="Recepción del hotel">
+    <div class="card-img-overlay rounded-0 d-flex align-items-end bg-dark bg-opacity-75 pb-5">
+      <div class="container">
+        <p class="small fw-bold text-uppercase mb-2">Hotel 4★ · Madrid</p>
+        <h1 class="display-5 fw-bold">Reserva al mejor precio tu próxima estancia</h1>
+        <p class="lead col-lg-6 mb-0">A 5 minutos a pie de El Retiro, con piscina en la azotea y habitaciones familiares.</p>
+      </div>
+    </div>
+  </header>
+
+  <section id="buscador" class="container py-4">
+    <div class="card border-0 shadow p-4">
+      <h2 class="h5 mb-3">Encuentra tu habitación</h2>
+      <form id="formBusqueda" action="available-rooms.html" method="get" class="row g-3 align-items-end" novalidate>
+        <div class="col-6 col-lg-3">
+          <label for="entrada" class="form-label small text-muted">Entrada</label>
+          <input type="date" class="form-control" id="entrada" name="entrada" required>
+        </div>
+        <div class="col-6 col-lg-3">
+          <label for="salida" class="form-label small text-muted">Salida</label>
+          <input type="date" class="form-control" id="salida" name="salida" required>
+          <div class="invalid-feedback">Tiene que ser después de la entrada.</div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <label for="adultos" class="form-label small text-muted">Adultos</label>
+          <select class="form-select" id="adultos" name="adultos">
+            <option>1</option>
+            <option selected>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+        </div>
+        <div class="col-6 col-lg-2">
+          <label for="ninos" class="form-label small text-muted">Niños</label>
+          <select class="form-select" id="ninos" name="ninos">
+            <option selected>0</option>
+            <option>1</option>
+            <option>2</option>
+          </select>
+        </div>
+        <div class="col-12 col-lg-2">
+          <button type="submit" class="btn btn-dorado w-100">Buscar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section id="ofertas" class="container py-4">
+    <h2 class="h4 mb-3">Ofertas pensadas para ti</h2>
+    <div id="carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators mb-0">
+        <button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" class="active" aria-label="Oferta 1"></button>
+        <button type="button" data-bs-target="#carrusel" data-bs-slide-to="1" aria-label="Oferta 2"></button>
+        <button type="button" data-bs-target="#carrusel" data-bs-slide-to="2" aria-label="Oferta 3"></button>
+        <button type="button" data-bs-target="#carrusel" data-bs-slide-to="3" aria-label="Oferta 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card border-0 shadow-sm overflow-hidden">
+            <div class="row g-0">
+              <div class="col-md-6 position-relative">
+                <img src="img/oferta-anticipada.jpg" class="img-fluid w-100 foto" alt="Habitación doble">
+                <span class="badge rounded-pill text-bg-warning position-absolute top-0 start-0 m-3">-15%</span>
+              </div>
+              <div class="col-md-6 card-body px-5 py-4 pb-5 align-self-center">
+                <h3 class="h5 card-title">Reserva anticipada</h3>
+                <p class="card-text text-muted">Reserva con 15 días de antelación y ahorra en tu estancia.</p>
+                <a href="#buscador" class="card-link fw-semibold">Ver oferta</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card border-0 shadow-sm overflow-hidden">
+            <div class="row g-0">
+              <div class="col-md-6 position-relative">
+                <img src="img/oferta-finde.jpg" class="img-fluid w-100 foto" alt="Desayuno en el hotel">
+                <span class="badge rounded-pill text-bg-warning position-absolute top-0 start-0 m-3">+ Desayuno</span>
+              </div>
+              <div class="col-md-6 card-body px-5 py-4 pb-5 align-self-center">
+                <h3 class="h5 card-title">Escapada fin de semana</h3>
+                <p class="card-text text-muted">Desayuno buffet incluido en tus estancias de viernes a domingo.</p>
+                <a href="#buscador" class="card-link fw-semibold">Ver oferta</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card border-0 shadow-sm overflow-hidden">
+            <div class="row g-0">
+              <div class="col-md-6 position-relative">
+                <img src="img/oferta-verano.jpg" class="img-fluid w-100 foto" alt="Terraza The Summit">
+                <span class="badge rounded-pill text-bg-warning position-absolute top-0 start-0 m-3">Verano</span>
+              </div>
+              <div class="col-md-6 card-body px-5 py-4 pb-5 align-self-center">
+                <h3 class="h5 card-title">Verano en The Summit</h3>
+                <p class="card-text text-muted">Acceso a la piscina de la azotea de junio a septiembre.</p>
+                <a href="#servicios" class="card-link fw-semibold">Ver oferta</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card border-0 shadow-sm overflow-hidden">
+            <div class="row g-0">
+              <div class="col-md-6 position-relative">
+                <img src="img/servicio-familias.jpg" class="img-fluid w-100 foto" alt="Familia en el hotel">
+                <span class="badge rounded-pill text-bg-warning position-absolute top-0 start-0 m-3">Familias</span>
+              </div>
+              <div class="col-md-6 card-body px-5 py-4 pb-5 align-self-center">
+                <h3 class="h5 card-title">Niños gratis</h3>
+                <p class="card-text text-muted">Los menores de 16 años se alojan gratis en la habitación de sus padres.</p>
+                <a href="rooms.html" class="card-link fw-semibold">Ver habitaciones</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="bg-white py-5 mt-4">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <p id="hotel-section" class="small fw-bold text-uppercase text-dorado mb-2">El hotel</p>
+          <h2 class="mb-3">Un lugar pensado para descansar</h2>
+          <p class="text-muted">Situado junto al parque de El Retiro y a 15 minutos a pie del Museo del Prado, el Novotel Madrid Center combina habitaciones modernas, restaurante, gimnasio 24 horas y la terraza The Summit con piscina.</p>
+          <div class="row g-2 my-4 text-center">
+            <div class="col-4"><div class="bg-light rounded p-2"><strong class="d-block fs-5">4,6/5</strong><small class="text-muted">Valoración</small></div></div>
+            <div class="col-4"><div class="bg-light rounded p-2"><strong class="d-block fs-5">790</strong><small class="text-muted">Habitaciones</small></div></div>
+            <div class="col-4"><div class="bg-light rounded p-2"><strong class="d-block fs-5">24 h</strong><small class="text-muted">Recepción</small></div></div>
+          </div>
+          <a id="btnHabitaciones" href="rooms.html" class="btn btn-outline-dark btn-lg">Ver habitaciones</a>
+        </div>
+        <div class="col-lg-6">
+          <img src="img/habitacion-estandar.jpg" class="img-fluid rounded" alt="Habitación del hotel">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios" class="container py-5">
+    <h2 class="h4 mb-4">Experiencias y servicios</h2>
+    <div class="row row-cols-2 row-cols-lg-4 g-3">
+      <div class="col">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="img/servicio-restaurante.jpg" class="card-img-top foto" alt="Restaurante Eat Bar">
+          <div class="card-body">
+            <h3 class="h6 card-title">Restaurante</h3>
+            <p class="card-text small text-muted">Eat Bar: cocina tradicional</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="img/servicio-piscina.jpg" class="card-img-top foto" alt="Piscina en la azotea">
+          <div class="card-body">
+            <h3 class="h6 card-title">Piscina y gimnasio</h3>
+            <p class="card-text small text-muted">Rooftop The Summit</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="img/servicio-eventos.jpg" class="card-img-top foto" alt="Sala de eventos">
+          <div class="card-body">
+            <h3 class="h6 card-title">Reuniones y eventos</h3>
+            <p class="card-text small text-muted">Centro de convenciones</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="img/servicio-familias.jpg" class="card-img-top foto" alt="Familia llegando al hotel">
+          <div class="card-body">
+            <h3 class="h6 card-title">Familias</h3>
+            <p class="card-text small text-muted">Niños gratis hasta 16 años</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="bg-white py-5">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-5">
+          <h2 class="h4 mb-3">Contacto</h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item px-0"><i class="bi bi-geo-alt me-2"></i> <a href="https://maps.app.goo.gl/3WTuPJawUHsqBY3b8">Calle O'Donnell 53, 28009 Madrid</a></li>
+            <li class="list-group-item px-0"><i class="bi bi-telephone me-2"></i> <a href="tel:+34912214060">+34 91 221 40 60</a></li>
+            <li class="list-group-item px-0 text-break"><i class="bi bi-envelope me-2"></i> <a href="mailto:grupos.MICE@novotelmadridcenter.com">grupos.MICE@novotelmadridcenter.com</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-7">
+          <div class="ratio ratio-4x3 rounded overflow-hidden">
+            <iframe src="https://www.google.com/maps?q=Novotel+Madrid+Center,+Calle+de+O'Donnell+53,+Madrid&output=embed" title="Mapa del hotel" loading="lazy" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-azul-oscuro text-white-50 pt-5 pb-4">
+    <div class="container">
+      <img src="img/logo-novotel-blanco.png" alt="Novotel Madrid Center" height="40" class="mb-4">
+      <div class="row g-4">
+        <div class="col-6 col-md-3">
+          <h2 class="h6 text-warning">Ayuda</h2>
+          <ul class="list-unstyled">
+            <li id="footer-link" class="mb-2"><a href="#buscador" class="link-light text-decoration-none">Gestionar reserva</a></li>
+            <li id="footer-link" class="mb-2"><a href="#contacto" class="link-light text-decoration-none">Preguntas frecuentes</a></li>
+            <li id="footer-link" class="mb-2"><a href="#contacto" class="link-light text-decoration-none">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3">
+          <h2 class="h6 text-warning">El hotel</h2>
+          <ul class="list-unstyled">
+            <li id="footer-link" class="mb-2"><a href="rooms.html" class="link-light text-decoration-none">Habitaciones</a></li>
+            <li id="footer-link" class="mb-2"><a href="#ofertas" class="link-light text-decoration-none">Ofertas</a></li>
+            <li id="footer-link" class="mb-2"><a href="#servicios" class="link-light text-decoration-none">Servicios</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <h2 class="h6 text-warning">Síguenos</h2>
+          <a id="rrss" href="https://www.facebook.com/NovotelMCenter/" target="_blank" class="link-light fs-4 me-3" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a id="rrss" href="https://www.instagram.com/novotelmcenter/" target="_blank" class="link-light fs-4 me-3" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a id="rrss" href="https://x.com/novotelmcenter?lang=es" target="_blank" class="link-light fs-4 me-3" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+          <a id="rrss" href="https://www.youtube.com/channel/UCDqbWLSPRt5mQQGbAMGRGoQ" target="_blank" class="link-light fs-4" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <hr>
+      <p class="small mb-0">© 2026 · Proyecto académico 2º DAW. No es la web oficial de Novotel Madrid Center.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+button:hover,
+a:hover {
+  transition: all 0.1s;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.bg-azul {
+  background-color: #1E1852;
+}
+
+.bg-azul-oscuro {
+  background-color: #120E36;
+}
+
+.text-dorado {
+  color: #8C6A2F;
+}
+
+.btn-dorado {
+  background-color: #C8A165;
+  color: #120E36;
+  font-weight: 600;
+}
+
+.btn-dorado:hover {
+  background-color: #B88F52;
+  color: #120E36;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #1E1852;
+}
+
+.foto {
+  height: 200px;
+  object-fit: cover;
+}
+
+.foto-hero {
+  height: 480px;
+  object-fit: cover;
+}
+
+#menu ul {
+  gap: 36px;
+}
+
+#reservar {
+  width: 120px;
+  height: 40px;
+}
+
+#header-nav-link:not(.active):hover {
+  border-bottom: 2px solid white;
+}
+
+#btnHabitaciones {
+  width: 100%;
+}
+
+#hotel-section,
+#seleccion {
+  letter-spacing: 6px;
+}
+
+#rrss:hover,
+#footer-link a:hover,
+li:has(> #rooms-nav-link:not(.active):hover) {
+  opacity: 60%;
+}
+
+#rooms-nav-link:not(.active) {
+  color: black;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-nav {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  #reservar {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+}
