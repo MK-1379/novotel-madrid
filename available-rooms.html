@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Disponibilidad | Novotel Madrid Center</title>
   <link rel="icon" href="img/favicon.png">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
 </head>
+
 <body class="bg-light">
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-azul py-3 sticky-top">
@@ -17,7 +22,8 @@
       <a class="navbar-brand" href="index.html">
         <img src="img/logo-novotel-blanco.png" alt="Novotel Madrid Center" height="30">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Abrir menú">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+        aria-label="Abrir menú">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="menu">
@@ -52,7 +58,8 @@
           <div class="col"><small class="text-muted d-block">Entrada</small><strong id="textoEntrada"></strong></div>
           <div class="col"><small class="text-muted d-block">Salida</small><strong id="textoSalida"></strong></div>
           <div class="col"><small class="text-muted d-block">Noches</small><strong id="textoNoches"></strong></div>
-          <div class="col"><small class="text-muted d-block">Huéspedes</small><strong id="textoHuespedes"></strong></div>
+          <div class="col"><small class="text-muted d-block">Huéspedes</small><strong id="textoHuespedes"></strong>
+          </div>
         </div>
         <button class="btn btn-outline-dark btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#modificar">
           <i class="bi bi-pencil"></i> Modificar
@@ -98,41 +105,45 @@
     <p class="small text-muted" id="numResultados"></p>
 
     <div class="row g-4">
+
       <div class="col-12 disponible" data-habitacion="estandar" data-personas="3" data-precio="165">
         <div class="card border-0 shadow-sm overflow-hidden">
           <div class="row g-0">
             <div class="col-md-5">
               <img src="img/habitacion-estandar.jpg" class="img-fluid w-100 h-100 foto" alt="Habitación Estándar">
             </div>
-            <div class="col-md-7 card-body">
-              <h2 class="h5 card-title">Habitación Estándar</h2>
-              <p class="card-text small text-muted">Hasta 3 personas. Moderna y funcional, ideal para escapadas en pareja o viajes de trabajo.</p>
+            <div class="col-md-7 card-body p-4 p-lg-5 d-flex flex-column justify-content-center">
+              <h2 class="h3 card-title mb-3">Habitación Estándar</h2>
+              <p class="card-text fs-5 text-muted">Hasta 3 personas. Moderna y funcional, ideal para escapadas en
+                pareja o viajes de trabajo.</p>
               <div class="d-flex justify-content-between align-items-end border-top pt-3">
                 <div>
-                  <small class="text-muted d-block">165 € / noche</small>
-                  <span class="fs-4 fw-bold total"></span>
+                  <span class="text-muted d-block fs-5">165 € / noche</span>
+                  <span class="display-6 fw-bold total"></span>
                 </div>
-                <a href="#" class="btn btn-dorado">Seleccionar</a>
+                <a href="#" class="btn btn-dorado btn-lg px-4">Seleccionar</a>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       <div class="col-12 disponible" data-habitacion="familiar" data-personas="4" data-precio="190">
         <div class="card border-0 shadow-sm overflow-hidden">
           <div class="row g-0">
             <div class="col-md-5">
               <img src="img/habitacion-familiar.jpg" class="img-fluid w-100 h-100 foto" alt="Estándar Familiar">
             </div>
-            <div class="col-md-7 card-body">
-              <h2 class="h5 card-title">Estándar Familiar</h2>
-              <p class="card-text small text-muted">Hasta 4 personas. Pensada para familias: camas para niños sin coste y niños gratis hasta 16 años.</p>
+            <div class="col-md-7 card-body p-4 p-lg-5 d-flex flex-column justify-content-center">
+              <h2 class="h3 card-title mb-3">Estándar Familiar</h2>
+              <p class="card-text fs-5 text-muted">Hasta 4 personas. Pensada para familias: camas para niños sin coste
+                y niños gratis hasta 16 años.</p>
               <div class="d-flex justify-content-between align-items-end border-top pt-3">
                 <div>
-                  <small class="text-muted d-block">190 € / noche</small>
-                  <span class="fs-4 fw-bold total"></span>
+                  <span class="text-muted d-block fs-5">190 € / noche</span>
+                  <span class="display-6 fw-bold total"></span>
                 </div>
-                <a href="#" class="btn btn-dorado">Seleccionar</a>
+                <a href="#" class="btn btn-dorado btn-lg px-4">Seleccionar</a>
               </div>
             </div>
           </div>
@@ -144,15 +155,16 @@
             <div class="col-md-5">
               <img src="img/habitacion-superior.jpg" class="img-fluid w-100 h-100 foto" alt="Habitación Superior">
             </div>
-            <div class="col-md-7 card-body">
-              <h2 class="h5 card-title">Habitación Superior</h2>
-              <p class="card-text small text-muted">Hasta 2 personas. Un plus de confort con acabados superiores para una estancia más cómoda.</p>
+            <div class="col-md-7 card-body p-4 p-lg-5 d-flex flex-column justify-content-center">
+              <h2 class="h3 card-title mb-3">Habitación Superior</h2>
+              <p class="card-text fs-5 text-muted">Hasta 2 personas. Un plus de confort con acabados superiores para
+                una estancia más cómoda.</p>
               <div class="d-flex justify-content-between align-items-end border-top pt-3">
                 <div>
-                  <small class="text-muted d-block">185 € / noche</small>
-                  <span class="fs-4 fw-bold total"></span>
+                  <span class="text-muted d-block fs-5">185 € / noche</span>
+                  <span class="display-6 fw-bold total"></span>
                 </div>
-                <a href="#" class="btn btn-dorado">Seleccionar</a>
+                <a href="#" class="btn btn-dorado btn-lg px-4">Seleccionar</a>
               </div>
             </div>
           </div>
@@ -164,15 +176,16 @@
             <div class="col-md-5">
               <img src="img/ejecutiva-salon.jpg" class="img-fluid w-100 h-100 foto" alt="Ejecutiva con salón">
             </div>
-            <div class="col-md-7 card-body">
-              <h2 class="h5 card-title">Ejecutiva con salón</h2>
-              <p class="card-text small text-muted">Hasta 4 personas. Amplia habitación con zona de salón independiente para trabajar o descansar.</p>
+            <div class="col-md-7 card-body p-4 p-lg-5 d-flex flex-column justify-content-center">
+              <h2 class="h3 card-title mb-3">Ejecutiva con salón</h2>
+              <p class="card-text fs-5 text-muted">Hasta 4 personas. Amplia habitación con zona de salón independiente
+                para trabajar o descansar.</p>
               <div class="d-flex justify-content-between align-items-end border-top pt-3">
                 <div>
-                  <small class="text-muted d-block">245 € / noche</small>
-                  <span class="fs-4 fw-bold total"></span>
+                  <span class="text-muted d-block fs-5">245 € / noche</span>
+                  <span class="display-6 fw-bold total"></span>
                 </div>
-                <a href="#" class="btn btn-dorado">Seleccionar</a>
+                <a href="#" class="btn btn-dorado btn-lg px-4">Seleccionar</a>
               </div>
             </div>
           </div>
@@ -184,15 +197,16 @@
             <div class="col-md-5">
               <img src="img/ejecutiva-terraza.jpg" class="img-fluid w-100 h-100 foto" alt="Ejecutiva con terraza">
             </div>
-            <div class="col-md-7 card-body">
-              <h2 class="h5 card-title">Ejecutiva con terraza</h2>
-              <p class="card-text small text-muted">Hasta 4 personas. Disfruta de tu propia terraza privada en pleno barrio de Salamanca.</p>
+            <div class="col-md-7 card-body p-4 p-lg-5 d-flex flex-column justify-content-center">
+              <h2 class="h3 card-title mb-3">Ejecutiva con terraza</h2>
+              <p class="card-text fs-5 text-muted">Hasta 4 personas. Disfruta de tu propia terraza privada en pleno
+                barrio de Salamanca.</p>
               <div class="d-flex justify-content-between align-items-end border-top pt-3">
                 <div>
-                  <small class="text-muted d-block">235 € / noche</small>
-                  <span class="fs-4 fw-bold total"></span>
+                  <span class="text-muted d-block fs-5">235 € / noche</span>
+                  <span class="display-6 fw-bold total"></span>
                 </div>
-                <a href="#" class="btn btn-dorado">Seleccionar</a>
+                <a href="#" class="btn btn-dorado btn-lg px-4">Seleccionar</a>
               </div>
             </div>
           </div>
@@ -204,24 +218,21 @@
             <div class="col-md-5">
               <img src="img/suite-superior.jpg" class="img-fluid w-100 h-100 foto" alt="Suite Superior">
             </div>
-            <div class="col-md-7 card-body">
-              <h2 class="h5 card-title">Suite Superior</h2>
-              <p class="card-text small text-muted">Hasta 4 personas. La habitación más espaciosa del hotel, en esquina y con cama king size.</p>
+            <div class="col-md-7 card-body p-4 p-lg-5 d-flex flex-column justify-content-center">
+              <h2 class="h3 card-title mb-3">Suite Superior</h2>
+              <p class="card-text fs-5 text-muted">Hasta 4 personas. La habitación más espaciosa del hotel, en esquina
+                y con cama king size.</p>
               <div class="d-flex justify-content-between align-items-end border-top pt-3">
                 <div>
-                  <small class="text-muted d-block">320 € / noche</small>
-                  <span class="fs-4 fw-bold total"></span>
+                  <span class="text-muted d-block fs-5">320 € / noche</span>
+                  <span class="display-6 fw-bold total"></span>
                 </div>
-                <a href="#" class="btn btn-dorado">Seleccionar</a>
+                <a href="#" class="btn btn-dorado btn-lg px-4">Seleccionar</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="alert alert-info small mt-4 mb-5">
-      <i class="bi bi-info-circle me-1"></i> Disponibilidad simulada con datos de ejemplo. Los precios son orientativos e incluyen impuestos.
     </div>
   </main>
 
@@ -232,25 +243,35 @@
         <div class="col-6 col-md-3">
           <h2 class="h6 text-warning">Ayuda</h2>
           <ul class="list-unstyled">
-            <li id="footer-link" class="mb-2"><a href="index.html#buscador" class="link-light text-decoration-none">Gestionar reserva</a></li>
-            <li id="footer-link" class="mb-2"><a href="index.html#contacto" class="link-light text-decoration-none">Preguntas frecuentes</a></li>
-            <li id="footer-link" class="mb-2"><a href="index.html#contacto" class="link-light text-decoration-none">Contacto</a></li>
+            <li id="footer-link" class="mb-2"><a href="index.html#buscador"
+                class="link-light text-decoration-none">Gestionar reserva</a></li>
+            <li id="footer-link" class="mb-2"><a href="index.html#contacto"
+                class="link-light text-decoration-none">Preguntas frecuentes</a></li>
+            <li id="footer-link" class="mb-2"><a href="index.html#contacto"
+                class="link-light text-decoration-none">Contacto</a></li>
           </ul>
         </div>
         <div class="col-6 col-md-3">
           <h2 class="h6 text-warning">El hotel</h2>
           <ul class="list-unstyled">
-            <li id="footer-link" class="mb-2"><a href="rooms.html" class="link-light text-decoration-none">Habitaciones</a></li>
-            <li id="footer-link" class="mb-2"><a href="index.html#ofertas" class="link-light text-decoration-none">Ofertas</a></li>
-            <li id="footer-link" class="mb-2"><a href="index.html#servicios" class="link-light text-decoration-none">Servicios</a></li>
+            <li id="footer-link" class="mb-2"><a href="rooms.html"
+                class="link-light text-decoration-none">Habitaciones</a></li>
+            <li id="footer-link" class="mb-2"><a href="index.html#ofertas"
+                class="link-light text-decoration-none">Ofertas</a></li>
+            <li id="footer-link" class="mb-2"><a href="index.html#servicios"
+                class="link-light text-decoration-none">Servicios</a></li>
           </ul>
         </div>
         <div class="col-md-6 text-md-end">
           <h2 class="h6 text-warning">Síguenos</h2>
-          <a id="rrss" href="https://www.facebook.com/NovotelMCenter/" target="_blank" class="link-light fs-4 me-3" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-          <a id="rrss" href="https://www.instagram.com/novotelmcenter/" target="_blank" class="link-light fs-4 me-3" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-          <a id="rrss" href="https://x.com/novotelmcenter?lang=es" target="_blank" class="link-light fs-4 me-3" aria-label="X"><i class="bi bi-twitter-x"></i></a>
-          <a id="rrss" href="https://www.youtube.com/channel/UCDqbWLSPRt5mQQGbAMGRGoQ" target="_blank" class="link-light fs-4" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          <a id="rrss" href="https://www.facebook.com/NovotelMCenter/" target="_blank" class="link-light fs-4 me-3"
+            aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a id="rrss" href="https://www.instagram.com/novotelmcenter/" target="_blank" class="link-light fs-4 me-3"
+            aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a id="rrss" href="https://x.com/novotelmcenter?lang=es" target="_blank" class="link-light fs-4 me-3"
+            aria-label="X"><i class="bi bi-twitter-x"></i></a>
+          <a id="rrss" href="https://www.youtube.com/channel/UCDqbWLSPRt5mQQGbAMGRGoQ" target="_blank"
+            class="link-light fs-4" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
         </div>
       </div>
       <hr>
@@ -258,7 +279,10 @@
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>
