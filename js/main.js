@@ -5,6 +5,10 @@ const adultos = Number(url.get("adultos"));
 const ninos = Number(url.get("ninos"));
 const noches = (new Date(salida) - new Date(entrada)) / (1000 * 60 * 60 * 24);
 
+if (document.querySelector(".disponible, #formReserva") && !(noches > 0)) {
+  window.location.replace("index.html#buscador");
+}
+
 const habitaciones = {
   "estandar": { nombre: "Habitación Estándar", foto: "img/habitacion-estandar.jpg", precio: 165 },
   "familiar": { nombre: "Estándar Familiar", foto: "img/habitacion-familiar.jpg", precio: 190 },
@@ -14,7 +18,7 @@ const habitaciones = {
   "suite": { nombre: "Suite Superior", foto: "img/suite-superior.jpg", precio: 320 }
 };
 
-const formBusqueda = document.getElementById("formBusqueda");
+const formBusqueda = document.getElementById("formBusqueda");   
 
 if (formBusqueda) {
   formBusqueda.addEventListener("submit", (e) => {
@@ -70,7 +74,7 @@ if (tarjetasDisponibles.length > 0) {
 const formReserva = document.getElementById("formReserva");
 
 if (formReserva) {
-  const habitacion = habitaciones[url.get("habitacion")];
+  const habitacion = habitaciones[url.get("habitacion")] || habitaciones["estandar"];
 
   document.getElementById("fotoHabitacion").src = habitacion.foto;
   document.getElementById("nombreHabitacion").textContent = habitacion.nombre;

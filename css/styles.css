@@ -27,6 +27,15 @@ h5 {
   color: #8C6A2F;
 }
 
+.text-dorado-claro {
+  color: #C8A165;
+}
+
+.bg-dorado {
+  background-color: #C8A165;
+  color: #120E36;
+}
+
 .btn-dorado {
   background-color: #C8A165;
   color: #120E36;
@@ -61,7 +70,7 @@ h5 {
   height: 40px;
 }
 
-#header-nav-link:not(.active):hover {
+.header-nav-link:not(.active):hover {
   border-bottom: 2px solid white;
 }
 
@@ -74,13 +83,13 @@ h5 {
   letter-spacing: 6px;
 }
 
-#rrss:hover,
-#footer-link a:hover,
-li:has(> #rooms-nav-link:not(.active):hover) {
+.rrss:hover,
+.footer-link a:hover,
+li:has(> .rooms-nav-link:not(.active):hover) {
   opacity: 60%;
 }
 
-#rooms-nav-link:not(.active) {
+.rooms-nav-link:not(.active) {
   color: black;
 }
 
